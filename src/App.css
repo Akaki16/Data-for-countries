@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 1.2px;
+    font-family: sans-serif;
+    background: whitesmoke;
+}
+
+header {
+    text-align: center;
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.search-area {
+    transform: translateY(20px);
+    text-align: center;
+}
+
+.search-area input {
+    width: 350px;
+    height: 40px;
+    padding: 10px;
+    font-size: 19px;
+    border-radius: 4px;
+    border: 2px solid rosybrown;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.message {
+    transform: translateY(35px);
+    text-align: center;
+    font-size: 19px;
+    color: #333;
+}
+
+.country-card {
+    transform: translateY(40px);
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    background: rgb(233, 232, 232);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 4px;
+    margin: 0 auto;
+}
+
+.country-card
+ul
+li {
+    list-style: none;
+}
+
+.country-card h1, p {
+    margin: 10px;
+}
+
+.country-card h3, li {
+    margin: 10px;
+}
+
+.country-card img {
+    width: 90%;
+    height: 200px;
+}
+
+.countries {
+    transform: translateY(40px);
+    text-align: center;
+}
+
+.countries h2 {
+    margin: 10px;
+}
+
+.countries h2 button {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 100px;
+    padding: 5px;
+    font-size: 19px;
+    border: 2px solid #333;
+    transition: 0.4s;
+}
+
+.countries h2 button:hover {
+    background: #333;
+    color: #fff;
+}
+
+.modal {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal
+.modal-content
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: whitesmoke;
+}
+
+.modal
+.modal-content
+.modal-header
+h1 {
+    color: #333;
+}
+
+.modal
+.modal-content {
+    transform: translateY(50px);
+    width: 400px;
+    height: auto;
+    margin: 0 auto;
+    padding: 20px;
+    background: whitesmoke;
+    border-radius: 6px;
+}
+
+.modal
+.modal-content
+ul
+li {
+    list-style: none;
+}
+
+.modal
+.modal-content
+img {
+    width: 90%;
+    height: 200px;
+}
+
+@media (max-width: 636px) {
+    .search-area input {
+        width: 90%;
+    }
+
+    .country-card {
+        width: 90%;
+    }
+
+    .modal
+    .modal-content {
+        width: 90%;
+    }
+}
